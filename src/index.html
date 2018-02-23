@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <!--<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">-->
+    <script src="js/day.js" type="text/javascript"></script>
+    <link href="./css/build.css" rel="stylesheet">
+</head>
+<body>
+<div class="container-fluid">
+    <header>
+        <div class="row-fluid">
+            <div class="col-md-6 col-sm-6 col-xs-6">
+                <div class="city">
+                    <select class="form-control">
+                        <option>Винница</option>
+                        <option>Киев</option>
+                        <option>Житомир</option>
+                        <option>Хмельницкий</option>
+                    </select>
+                </div>
+                <div class="reg">
+                    <div class="enter">ВХІД</div>
+                    <div class="cabinet">КАБІНЕТ</div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-6 col-xs-6">
+            </div>
+            <div class="i">
+                <img src="./image/header_circle.png" alt="">
+            </div>
+        </div>
+    </header>
+    <content>
+        <div class="container">
+            <div class="row-fluid slider-wrapper">
+                <!-- Slider-->
+                <div class="col-md-12 col-sm-12 col-xs-12 main-slider">
+                    <!-- Карусель -->
+                    <div id="myCarousel" class="carousel slide" data-interval="6000" data-ride="carousel">
+                        <!-- Индикаторы для карусели -->
+                        <ol class="carousel-indicators">
+                            <!-- Перейти к 0 слайду карусели с помощью соответствующего индекса data-slide-to="0" -->
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <!-- Перейти к 1 слайду карусели с помощью соответствующего индекса data-slide-to="1" -->
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <!-- Перейти к 2 слайду карусели с помощью соответствующего индекса data-slide-to="2" -->
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                        </ol>
+
+                        <!-- Слайды карусели -->
+                        <div class="carousel-inner">
+                            <!--Слайд №1-->
+                            <div class="active item">
+                                <img class="carousel_image" src="./image/Gravity_2.png" alt="">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <div class="row">
+                                            <div class="next_seans">
+                                                <p>до найближчого сеансу</p>
+                                                <p>залишилось</p>
+                                            </div>
+                                        </div>
+                                        <div class="vertikal">
+                                            <h1>ГРАВІТАЦІЯ</h1>
+                                            <h3>GRAVITY</h3>
+                                            <p>20.10 - 25.10.2013p.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Слайд №2 -->
+                            <div class="item">
+                                <img class="carousel_image" src="./image/Golod_2.png" alt="">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <div class="row">
+                                            <div class="next_seans">
+                                                <p>до найближчого сеансу</p>
+                                                <p>залишилось</p>
+                                            </div>
+                                        </div>
+                                        <div class="vertikal">
+                                            <h1>Голодные игры</h1>
+                                            <h3>I'm hungry</h3>
+                                            <p>20.10 - 25.10.2013p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Слайд №3 -->
+                            <div class="item">
+                                <img class="carousel_image" src="./image/RO_2.png" alt="">
+                                <div class="container">
+                                    <div class="carousel-caption">
+                                        <div class="row">
+                                            <div class="next_seans">
+                                                <p>до найближчого сеансу</p>
+                                                <p>залишилось</p>
+                                            </div>
+                                        </div>
+                                        <div class="vertikal">
+                                            <h1>Изгой один</h1>
+                                            <h3>Rouge one</h3>
+                                            <p>20.10 - 25.10.2013p</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Навигация для карусели -->
+                        <!-- Кнопка, осуществляющая переход на предыдущий слайд с помощью атрибута data-slide="prev" -->
+                        <a class="carousel-control left" href="#myCarousel" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left"></span>
+                        </a>
+                        <!-- Кнопка, осуществляющая переход на следующий слайд с помощью атрибута data-slide="next" -->
+                        <a class="carousel-control right" href="#myCarousel" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right"></span>
+                        </a>
+                    </div>
+                </div>
+                <!--Menu navigation upon the slider -->
+                <div class="main_menu">
+                    <ul>
+                        <li><a href="index.html"><p>ФІЛЬМИ</p></a></li>
+                        <li><a href=""><p>РОЗКЛАД</p></a></li>
+                        <li><a href=""><p>РЕКЛАММА НА САЙТІ</p></a></li>
+                        <li><a href=""><p>КОНТАКТИ</p></a></li>
+                    </ul>
+                </div>
+                <div class="book_shadow">
+                    <img class="shadow" src="./image/Book.png" alt=""></div>
+            </div>
+        </div>
+        <div class="calendar-wrapper">
+            <div class="calendar_header"></div>
+            <div class="container">
+                <div class="col-md-12 col-sm-12 col-xs-12 calendar">
+
+                <!--Calendar -->
+                <div class="col-md-12 col-sm-12 col-xs-12">
+                    <div class="calendar-content">
+                        <table class="table">
+                            <tr class="week_days">
+                                <th width="14.2%"><span>ПОНЕДІЛОК</span></th>
+                                <th><span>ВІВТОРОК</span></th>
+                                <th><span>СЕРЕДА</span></th>
+                                <th><span>ЧЕТВЕР</span></th>
+                                <th><span>П'ЯТНИЦЯ</span></th>
+                                <th><span>СУБОТА</span></th>
+                                <th><span>НЕДІЛЯ</span></th>
+                            </tr>
+                            <tr>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                                <td>1</td>
+                                <td>2</td>
+                                <td>3</td>
+                                <td>4</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>6</td>
+                                <td>7</td>
+                                <td>8</td>
+                                <td>9</td>
+                                <td>10</td>
+                                <td>11</td>
+                            </tr>
+                            <tr>
+                                <td>12</td>
+                                <td>13</td>
+                                <td>14</td>
+                                <td>15</td>
+                                <td>16</td>
+                                <td>17</td>
+                                <td class="info">18</td>
+                            </tr>
+                            <tr>
+                                <td class="info">19</td>
+                                <td class="info">20</td>
+                                <td class="active">21</td>
+                                <td class="info">22</td>
+                                <td class="info">23</td>
+                                <td class="info">24</td>
+                                <td>25</td>
+                            </tr>
+                            <tr>
+                                <td>26</td>
+                                <td>27</td>
+                                <td>28</td>
+                                <td>29</td>
+                                <td>30</td>
+                                <td>31</td>
+                                <td>1</td>
+                            </tr>
+                            <div class="curday">
+                            </div>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="container">
+        <!--Reklama-->
+            <div class="col-md-12 col-sm-12 col-xs-12 baner">
+                <a href="http://htmlbook.ru/content/izobrazhenie-v-kachestve-ssylki" target="_blank"><img
+                        class="baner_img" src="./image/Baner.png" alt=""></a>
+            </div>
+        </div>
+        <div class="container">
+            <!--Tabs-->
+            <div class="col-md-12 col-sm-12 col-xs-12 prokat">
+
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab"
+                                                              data-toggle="tab">ЗАРАЗ В ПРОКАТІ</a></li>
+                    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">НЕЗАБАРОМ
+                        НА ЕКРАНАХ</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+                        <ul class="tab_gallery">
+                            <li>
+                                <div class="img-wrapper">
+                                    <a href="https://www.kinopoisk.ru/film/468196/" target="_blank">
+                                        <img class="gallery-img" src="./image/SyalynGrad_small.png" alt=""></a>
+                                </div>
+                                <div class="red-block">
+                                    <p>СТАЛІНГРАД</p>
+                                    <div class="stars-block">
+                                        <a href="#" class="star active"><span class="glyphicon glyphicon-star"
+                                                                              aria-hidden="true"></span></a>
+                                        <a href="#" class="star active"><span class="glyphicon glyphicon-star"
+                                                                              aria-hidden="true"></span></a>
+                                        <a href="#" class="star"><span class="glyphicon glyphicon-star"
+                                                                       aria-hidden="true"></span></a>
+                                        <a href="#" class="star"><span class="glyphicon glyphicon-star"
+                                                                       aria-hidden="true"></span></a>
+                                        <a href="#" class="star"><span class="glyphicon glyphicon-star"
+                                                                       aria-hidden="true"></span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-wrapper">
+                                    <a href="https://www.kinopoisk.ru/film/520946/" target="_blank">
+                                        <img class="gallery-img" src="./image/House_small.png" alt=""></a>
+                                </div>
+                                <div class="red-block">
+                                    <p>БУДИНОК <br> ЗАБУТИХ РЕЧЕЙ</p>
+                                    <div class="stars-block">
+                                        <a href="#" class="star active"><span class="glyphicon glyphicon-star"
+                                                                              aria-hidden="true"></span></a>
+                                        <a href="#" class="star"><span class="glyphicon glyphicon-star"
+                                                                       aria-hidden="true"></span></a>
+                                        <a href="#" class="star"><span class="glyphicon glyphicon-star"
+                                                                       aria-hidden="true"></span></a>
+                                        <a href="#" class="star"><span class="glyphicon glyphicon-star"
+                                                                       aria-hidden="true"></span></a>
+                                        <a href="#" class="star"><span class="glyphicon glyphicon-star"
+                                                                       aria-hidden="true"></span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-wrapper">
+                                    <a href="https://www.kinopoisk.ru/film/463686/" target="_blank">
+                                        <img class="gallery-img" src="./image/Plan_small.png" alt=""></a>
+                                </div>
+                                <div class="red-block">
+                                    <p>ПЛАН ВТЕЧІ</p>
+                                    <div class="stars-block">
+                                        <a href="#" class="star active"><span class="glyphicon glyphicon-star"
+                                                                              aria-hidden="true"></span></a>
+                                        <a href="#" class="star active"><span class="glyphicon glyphicon-star"
+                                                                              aria-hidden="true"></span></a>
+                                        <a href="#" class="star active"><span class="glyphicon glyphicon-star"
+                                                                              aria-hidden="true"></span></a>
+                                        <a href="#" class="star active"><span class="glyphicon glyphicon-star"
+                                                                              aria-hidden="true"></span></a>
+                                        <a href="#" class="star"><span class="glyphicon glyphicon-star"
+                                                                       aria-hidden="true"></span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-wrapper">
+                                    <a href="https://www.kinopoisk.ru/film/468466/" target="_blank">
+                                        <img class="gallery-img" src="./image/Gravity_small.png" alt=""></a>
+                                </div>
+                                <div class="red-block">
+                                    <p>ГРАВІТАЦІЯ</p>
+                                    <div class="stars-block">
+                                        <a href="#" class="star active"><span class="glyphicon glyphicon-star"
+                                                                              aria-hidden="true"></span></a>
+                                        <a href="#" class="star active"><span class="glyphicon glyphicon-star"
+                                                                              aria-hidden="true"></span></a>
+                                        <a href="#" class="star active"><span class="glyphicon glyphicon-star"
+                                                                              aria-hidden="true"></span></a>
+                                        <a href="#" class="star active"><span class="glyphicon glyphicon-star"
+                                                                              aria-hidden="true"></span></a>
+                                        <a href="#" class="star active"><span class="glyphicon glyphicon-star"
+                                                                              aria-hidden="true"></span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-wrapper">
+                                    <a href="https://www.kinopoisk.ru/film/512326/" target="_blank">
+                                        <img class="gallery-img" src="./image/Romeo_small.png" alt=""></a>
+                                    <div class="red-block">
+                                        <p>РОМЕО<br> І ДЖУЛЬЄТТА</p>
+                                        <div class="stars-block">
+                                            <a href="#" class="star active"><span class="glyphicon glyphicon-star"
+                                                                                  aria-hidden="true"></span></a>
+                                            <a href="#" class="star"><span class="glyphicon glyphicon-star"
+                                                                           aria-hidden="true"></span></a>
+                                            <a href="#" class="star"><span class="glyphicon glyphicon-star"
+                                                                           aria-hidden="true"></span></a>
+                                            <a href="#" class="star"><span class="glyphicon glyphicon-star"
+                                                                           aria-hidden="true"></span></a>
+                                            <a href="#" class="star"><span class="glyphicon glyphicon-star"
+                                                                           aria-hidden="true"></span></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-wrapper">
+                                    <a href="https://www.kinopoisk.ru/film/468196/" target="_blank">
+                                        <img class="gallery-img" src="../image/SyalynGrad_small.png" alt=""></a>
+                                </div>
+                                <div class="red-block">
+                                    <p>СТАЛІНГРАД</p>
+                                    <div class="stars-block">
+                                        <a href="#" class="star"><span class="glyphicon glyphicon-star"
+                                                                       aria-hidden="true"></span></a>
+                                        <a href="#" class="star"><span class="glyphicon glyphicon-star"
+                                                                       aria-hidden="true"></span></a>
+                                        <a href="#" class="star"><span class="glyphicon glyphicon-star"
+                                                                       aria-hidden="true"></span></a>
+                                        <a href="#" class="star"><span class="glyphicon glyphicon-star"
+                                                                       aria-hidden="true"></span></a>
+                                        <a href="#" class="star"><span class="glyphicon glyphicon-star"
+                                                                       aria-hidden="true"></span></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-wrapper">
+                                    <a href="https://www.kinopoisk.ru/film/520946/" target="_blank">
+                                        <img class="gallery-img" src="../image/House_small.png" alt=""></a>
+                                </div>
+                                <div class="red-block">
+                                    <p>БУДИНОК <br> ЗАБУТИХ РЕЧЕЙ</p>
+                                    <div class="stars-block">
+                                        <a href="#" class="star"></a>
+                                        <a href="#" class="star"></a>
+                                        <a href="#" class="star"></a>
+                                        <a href="#" class="star"></a>
+                                        <a href="#" class="star"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-wrapper">
+                                    <a href="https://www.kinopoisk.ru/film/463686/" target="_blank">
+                                        <img class="gallery-img" src="../image/Plan_small.png" alt=""></a>
+                                </div>
+                                <div class="red-block">
+                                    <p>ПЛАН ВТЕЧІ</p>
+                                    <div class="stars-block">
+                                        <a href="#" class="star"></a>
+                                        <a href="#" class="star"></a>
+                                        <a href="#" class="star"></a>
+                                        <a href="#" class="star"></a>
+                                        <a href="#" class="star"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-wrapper">
+                                    <a href="https://www.kinopoisk.ru/film/468466/" target="_blank">
+                                        <img class="gallery-img" src="../image/Gravity_small.png" alt=""></a>
+                                </div>
+                                <div class="red-block">
+                                    <p>ГРАВІТАЦІЯ</p>
+                                    <div class="stars-block">
+                                        <a href="#" class="star"></a>
+                                        <a href="#" class="star"></a>
+                                        <a href="#" class="star"></a>
+                                        <a href="#" class="star"></a>
+                                        <a href="#" class="star"></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="img-wrapper">
+                                    <a href="https://www.kinopoisk.ru/film/512326/" target="_blank">
+                                        <img class="gallery-img" src="../image/Romeo_small.png" alt=""></a>
+                                    <div class="red-block">
+                                        <p>РОМЕО<br> І ДЖУЛЬЄТТА</p>
+                                        <div class="stars-block">
+                                            <a href="#" class="star"></a>
+                                            <a href="#" class="star"></a>
+                                            <a href="#" class="star"></a>
+                                            <a href="#" class="star"></a>
+                                            <a href="#" class="star"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div role="tabpanel" class="tab-pane" id="profile"></div>
+                </div>
+            </div>
+        </div>
+    </content>
+</div>
+<footer>
+    <div class="footer container">
+        <div class="row">
+            <div class="col-md-6">.col-md-6</div>
+            <div class="col-md-6">.col-md-6</div>
+        </div>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+</body>
+</html>
