@@ -311,8 +311,8 @@ main .week_days > th {
     text-align: left;
 }
 
-/*reklama*/
-.baner {
+/*Banner*/
+.banner {
     text-align: center;
     height: 90px;
     margin-top: 20px;
