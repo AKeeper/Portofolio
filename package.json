@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/AKeeper/GIT_Test.git"
+    "url": "git+https://github.com/AKeeper/Portofolio"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/AKeeper/GIT_Test/issues"
+    "url": "https://github.com/AKeeper/Portofolio/issues"
   },
-  "homepage": "https://github.com/AKeeper/GIT_Test#readme",
+  "homepage": "https://github.com/AKeeper/Portofolio#readme",
   "dependencies": {
     "bootstrap": "^3.3.7",
     "gulp-install": "^1.1.0"

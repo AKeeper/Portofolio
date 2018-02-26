@@ -15,7 +15,7 @@ gulp.task('html', function() {
 gulp.task('js', function() {
     gulp
         .src([
-            './src/js/day.js',
+            './src/js/*.js',
             './node_modules/bootstrap/dist/js/bootstrap.min.js'
         ])
         .pipe(gulp.dest('./build/js/'))
@@ -35,17 +35,17 @@ gulp.task('img', function() {
 gulp.task('css', function() {
     gulp
         .src([
-            './src/styles/main.less',
+            './src/styles/main.css',
             './src/styles/**/*.css',
-            './node_modules/bootstrap/dist/css/bootstrap.css'
+            './src/styles/bootstrap.min.css'
         ])
-        .pipe(less())
-        .pipe(autoprefixer({
-            browsers: ['last 2 versions']
-        }))
-        .pipe(concat('build.css'))
-        .pipe(cleanCSS({compatibility: 'ie9'}))
-        .pipe(gulp.dest('./build/css/'))
+        // .pipe(less())
+        // .pipe(autoprefixer({
+        //     browsers: ['last 2 versions']
+        // }))
+        // .pipe(concat('build.css'))
+        // .pipe(cleanCSS({compatibility: 'ie9'}))
+        .pipe(gulp.dest('./build/styles/'))
         .pipe(browserSync.stream());
     }
 );
