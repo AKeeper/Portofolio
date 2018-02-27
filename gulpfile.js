@@ -32,25 +32,33 @@ gulp.task('img', function() {
         .pipe(browserSync.stream());
 });
 
+gulp.task('fonts', function() {
+    gulp
+        .src([
+            './node_modules/bootstrap/dist/fonts/*.*'
+        ])
+        .pipe(gulp.dest('./build/fonts/'));
+});
+
 gulp.task('css', function() {
     gulp
         .src([
             './src/styles/main.css',
             './src/styles/**/*.css',
-            './src/styles/bootstrap.min.css'
+            '/node_modules/bootstrap/dist/css/bootstrap.min.css'
         ])
         // .pipe(less())
         // .pipe(autoprefixer({
         //     browsers: ['last 2 versions']
         // }))
-        // .pipe(concat('build.css'))
+        // .pipe(concat('main.css'))
         // .pipe(cleanCSS({compatibility: 'ie9'}))
         .pipe(gulp.dest('./build/styles/'))
         .pipe(browserSync.stream());
     }
 );
 
-gulp.task('serve', ['html', 'css', 'js', 'img'], function(){
+gulp.task('serve', ['html', 'css', 'js', 'img', 'fonts'], function(){
     browserSync.init({
         server: {
             baseDir: "./build"
