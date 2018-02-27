@@ -447,6 +447,8 @@ main .week_days > th {
 /* FOOTER*/
 footer {
     background-color: #575757 ;
+    text-align: center;
+    color: #ffffff;
 
 }
 footer .footer{
