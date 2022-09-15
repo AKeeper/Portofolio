@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/AKeeper/Portofolio#readme",
   "dependencies": {
-    "bootstrap": "^3.3.7",
+    "bootstrap": "^3.4.1",
     "gulp-install": "^1.1.0"
   },
   "devDependencies": {
